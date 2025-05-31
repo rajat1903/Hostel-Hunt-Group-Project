@@ -11,7 +11,7 @@ class HostelListing(models.Model):
     - contact: Contact number
     - description: Detailed description
     - image: Hostel image
-    - created_at: Timestamp of when the listing was created
+    - created_at: Timestamp of when the listing was created 
     """
     
     # Room type choices
