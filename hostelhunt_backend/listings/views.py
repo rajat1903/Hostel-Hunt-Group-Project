@@ -6,7 +6,7 @@ from .models import HostelListing
 # ======================
 # API Views
 # ======================
-
+  
 @csrf_exempt
 @require_http_methods(["POST"])
 def create_listing(request):
