@@ -10,6 +10,21 @@ HostelHunt is a web application designed to help students find and book hostels 
 - Add new hostel listings
 - Responsive design for both desktop and mobile devices
 
+## Screenshots
+
+### Landing Page
+![Landing Page](hostelhunt_backend/media/hostel_images/Screenshot_2024-12-05_120113.png)
+
+### Hostel Listings
+![Hostel Listings](hostelhunt_backend/media/hostel_images/IMG-20240805-WA0010.jpg)
+
+### Add New Listing
+![Add New Listing](hostelhunt_backend/media/hostel_images/IMG-20231112-WA0000.jpg)
+
+### Sample Hostel Images
+![Hostel Image 1](hostelhunt_backend/media/hostel_images/IMG-20230812-WA0010.jpg)
+![Hostel Image 2](hostelhunt_backend/media/hostel_images/OIP.jpg)
+
 ## Tech Stack
 
 ### Frontend
