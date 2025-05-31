@@ -94,6 +94,13 @@ The application will be available at `http://localhost:8000`
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
+## Contributing
+
+1. Ankit Songara (Team Leader)
+2. Shivam Kushwah (Developer)
+3. Rajat Deshmukh (Developer)
+4. Bulbul (Developer)
+   
 ## Contact
 
 Rajat Deshmukh - [@rajat1903](https://github.com/rajat1903)
