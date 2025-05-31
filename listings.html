@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HostelHunt - Listings</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <h1><a href="index.html" style="color: white; text-decoration: none;">HostelHunt</a></h1>
+        </div>
+        <div class="nav-links">
+            <a href="listings.html" class="nav-link active">
+                <i class="fas fa-home"></i>
+                Home
+            </a>
+            <a href="add-listing.html" class="nav-link">
+                <i class="fas fa-list"></i>
+                Listing
+            </a>
+        </div>
+    </nav>
+
+    <section class="listings-section">
+        <div class="listings-container">
+            <h1>Available Hostels</h1>
+            <div class="listings-grid" id="listingsGrid">
+                <!-- Listings will be loaded here dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="copyright">
+                <p>&copy; 2025 HostelHunt. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // ======================
+        // Listing Card Functions
+        // ======================
+
+        /**
+         * Create HTML for a listing card
+         * @param {Object} listing - The listing data
+         * @returns {HTMLElement} The listing card element
+         */
+        function createListingCard(listing) {
+            const listingCard = document.createElement('div');
+            listingCard.className = 'listing-card';
+            
+            // Create card content
+            listingCard.innerHTML = `
+                <div class="listing-image">
+                    <img src="${listing.image_url}" alt="Hostel Image">
+                </div>
+                <div class="listing-details">
+                    <h3>${listing.room_type}</h3>
+                    <p class="location"><i class="fas fa-map-marker-alt"></i> ${listing.location}</p>
+                    <p class="owner"><i class="fas fa-user"></i> ${listing.owner_name}</p>
+                    <p class="rent"><i class="fas fa-rupee-sign"></i> ${listing.monthly_rent}/month</p>
+                    <p class="contact"><i class="fas fa-phone"></i> ${listing.contact}</p>
+                    <p class="description">${listing.description}</p>
+                </div>
+            `;
+            
+            return listingCard;
+        }
+
+        // ======================
+        // Data Loading Functions
+        // ======================
+
+        /**
+         * Fetch and display all listings
+         * - Gets data from backend
+         * - Creates and displays listing cards
+         * - Handles errors
+         */
+        async function loadListings() {
+            try {
+                // Fetch listings from backend
+                const response = await fetch('http://localhost:8000/api/listings/');
+                const data = await response.json();
+                
+                if (data.status === 'success') {
+                    const listingsGrid = document.getElementById('listingsGrid');
+                    
+                    // Clear existing listings
+                    listingsGrid.innerHTML = '';
+                    
+                    // Add each listing to the grid
+                    data.listings.forEach(listing => {
+                        const listingCard = createListingCard(listing);
+                        listingsGrid.appendChild(listingCard);
+                    });
+                } else {
+                    console.error('Error fetching listings:', data.message);
+                    alert('Failed to load listings. Please try again later.');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('Failed to load listings. Please check your internet connection.');
+            }
+        }
+
+        // Load listings when page loads
+        document.addEventListener('DOMContentLoaded', loadListings);
+    </script>
+</body>
+</html> 
