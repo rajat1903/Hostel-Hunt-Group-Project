@@ -90,6 +90,27 @@ The application will be available at `http://localhost:8000`
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
+## Images
+
+![image](https://github.com/user-attachments/assets/aea5b0a2-81df-482a-aa57-a85c73161ad3)
+
+
+![image](https://github.com/user-attachments/assets/0a9c8287-efae-47c6-ac63-fcc773d513ab)
+
+
+![image](https://github.com/user-attachments/assets/5ef08d9a-135a-4a54-924f-f46e1be13e9e)
+
+
+
+![image](https://github.com/user-attachments/assets/59c92146-e758-4bdc-a1ce-00e3d08da478)
+
+
+![image](https://github.com/user-attachments/assets/f60bd56a-ac36-468a-9797-7de05d56df37)
+
+
+
+
+
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
