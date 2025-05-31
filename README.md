@@ -10,7 +10,7 @@ HostelHunt is a web application designed to help students find and book hostels 
 - Add new hostel listings
 - Responsive design for both desktop and mobile devices
 
-## Tech Stack
+## Tech Stack 
 
 ### Frontend
 - HTML5
