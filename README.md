@@ -94,7 +94,7 @@ The application will be available at `http://localhost:8000`
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## Contributing
+## Contributors
 
 1. Ankit Songara (Team Leader)
 2. Shivam Kushwah (Developer)
