@@ -6,7 +6,7 @@ class HostelListing(models.Model):
     Fields:
     - room_type: Type of room (single/double/triple)
     - owner_name: Name of the hostel owner
-    - location: Location of the hostel
+    - location: Location of the hostel 
     - monthly_rent: Monthly rent amount
     - contact: Contact number
     - description: Detailed description
