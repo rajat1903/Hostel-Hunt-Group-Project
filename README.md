@@ -96,6 +96,6 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Contact
 
-Rajat - [@rajat1903](https://github.com/rajat1903)
+Rajat Deshmukh - [@rajat1903](https://github.com/rajat1903)
 
 Project Link: [https://github.com/rajat1903/Hostel-Hunt](https://github.com/rajat1903/Hostel-Hunt) 
