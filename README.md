@@ -3,7 +3,7 @@
 HostelHunt is a web application designed to help students find and book hostels easily. The platform provides a user-friendly interface for browsing hostel listings, viewing details, and managing bookings.
 
 ## Features
-
+ 
 - Browse hostel listings with detailed information
 - View hostel images and amenities
 - Search and filter hostels based on preferences
